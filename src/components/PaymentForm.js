@@ -40,7 +40,7 @@ export default function PaymentForm() {
     if(!error) {
         try {
             const {id} = paymentMethod
-            const response = await axios.post("http://localhost:5000/payment", {
+            const response = await axios.post("https://babi-halls.herokuapp.com/payment", {
                 amount: 100000,
                 id
             })
